@@ -1,0 +1,42 @@
+/*!
+Theme Name: bintango
+Theme URI: https://instagram.com/opanbobo
+Author: Tofan Aditya
+Author URI: https://instagram.com/opanbobo/
+Description: company profile.
+Version: 1.0.0
+License URI: LICENSE
+Text Domain: bintango
+*/
+
+.yuotube-rounded{
+    border-radius: 30px;
+}
+
+.page-template-page-for-creators .navbar-nav .nav-item:nth-child(1) .nav-link {
+    border-bottom: 5px solid #EF5431;
+}
+
+.page-template-page-for-business .navbar-nav .nav-item:nth-child(2) .nav-link {
+    border-bottom: 5px solid #EF5431;
+}
+
+.page-template-page-for-fans .navbar-nav .nav-item:nth-child(3) .nav-link {
+    border-bottom: 5px solid #EF5431;
+}
+.fansbanner{
+    background: url(images/bg-forfans.jpg) no-repeat !important;
+    background-size: 100% !important;
+}
+.slick-dots{
+    z-index: 1 !important;
+}
+.list-fc{
+    padding-left: 15px;
+}
+.list-fc li{
+    font-size: 18px;
+}
+.navbar-nav .nav-item{
+    text-transform: capitalize;
+}
