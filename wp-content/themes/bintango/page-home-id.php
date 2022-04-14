@@ -23,10 +23,12 @@ Template Name: Home Page Indonesia
     <section id="BuiltForCreator" class="forcreator">
       <div class="container">
         <div class="row">
+        <?php
+        $bCreator = get_field('build_creators');  ?>
           <div class="col-md-7 text-white">
-            <h1 class="title">Dibuat untuk Kreator</h1>
-            <h3 class="subtitle">Ubah passion mu Menjadi Pendapatan  </h3>
-            <p>All‑in‑One CreatorSpace untuk #GrowBeyond sebagai Content Creator dengan berbagai fitur yang pastinya memberikan banyak keuntungan buat kamu.</p>
+            <h1 class="title"><?php echo $bCreator['title']; ?></h1>
+            <h3 class="subtitle"><?php echo $bCreator['subtitle']; ?></h3>
+            <p><?php echo $bCreator['desc']; ?></p>
           </div>          
         </div>
       </div>

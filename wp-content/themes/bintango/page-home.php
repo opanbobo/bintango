@@ -23,10 +23,12 @@ Template Name: Home Page
     <section id="BuiltForCreator" class="forcreator">
       <div class="container">
         <div class="row">
+        <?php
+        $bCreator = get_field('build_creators');  ?>
           <div class="col-md-7 text-white">
-            <h1 class="title">Built for Creators</h1>
-            <h3 class="subtitle">Turn Your Passion into Profit</h3>
-            <p>The all-in-one CreatorSpace that allows you to deal with your hustle, send invoices, get financing, construct your social customer storefront in one place.</p>
+            <h1 class="title"><?php echo $bCreator['title']; ?></h1>
+            <h3 class="subtitle"><?php echo $bCreator['subtitle']; ?></h3>
+            <p><?php echo $bCreator['desc']; ?></p>
           </div>          
         </div>
       </div>

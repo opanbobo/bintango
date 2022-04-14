@@ -230,7 +230,7 @@ Template Name: for business Page
             <div class="hitus hitus-text">
               <h1><?php echo $exSection['title']; ?></h1>
               <h6><?php echo $exSection['subtitle']; ?></h6>
-              <a class="btn btn--large btn__tiger text-uppercase mt-5" href="https://api.whatsapp.com/send/?phone=6281280777870&text=Halo+saya+mengunjungi+web+BintanGO%2C+dan+ingin+berkolaborasi+dengan+Creator+dong%2C+nama+brand+saya+&app_absent=0" target="_new">Hit us message</a>
+              <a class="btn btn--large btn__tiger text-uppercase mt-5" href="https://api.whatsapp.com/send/?phone=6281280777870&text=Halo+saya+mengunjungi+web+BintanGO%2C+dan+ingin+berkolaborasi+dengan+Creator+dong%2C+nama+brand+saya+&app_absent=0" target="_new">Hit us with a Message</a>
             </div>
             <img src="<?php bloginfo('template_url'); ?>/images/hit-1.png" alt="" class="hitus hitus-one">
             <img src="<?php bloginfo('template_url'); ?>/images/hit-2.png" alt="" class="hitus hitus-two">

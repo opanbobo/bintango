@@ -26,10 +26,10 @@ Template Name: for creators Page Indonesia
             <h3 class="subtitle"><?php echo $welcomeFC['shortdesc']; ?></h3>
             <div class="row">
               <div class="col-md-4 text-center">
-                <img src="<?php bloginfo('template_url'); ?>/images/qr.jpg" alt="" class="img-fluid mx-auto">
+                <img src="<?php echo esc_url( $welcomeFC['qrcode']['url'] ); ?>" alt="" class="img-fluid mx-auto">
               </div>
               <div class="col-md-7 align-self-center px-md-0">
-                <a class="btn btn__tiger btn-block text-uppercase" href="#">Dapatkan Aplikasinya Sekarang</a>
+                <a class="btn btn__tiger btn-block text-uppercase" href="<?php echo $welcomeFC['url']; ?>">Dapatkan Aplikasinya Sekarang</a>
               </div>
             </div>
           </div> 
@@ -51,9 +51,11 @@ Template Name: for creators Page Indonesia
     <section class="testimonial">
       <div class="container">
         <div class="row">
+        <?php
+        $BeforeSliders = get_field('before_sliders');  ?>
           <div class="col-md-12 text-white text-center">
-            <h1 class="title">Tidak mebatasi potensi yang tak terbatas milik anda</h1>
-            <p>Dipercaya oleh 500+ Kreator</p>
+            <h1 class="title"><?php echo $BeforeSliders['title']; ?></h1>
+            <p><?php echo $BeforeSliders['desc']; ?></p>
           </div>          
         </div>
       </div>
@@ -170,7 +172,7 @@ Template Name: for creators Page Indonesia
                     <?php echo $verifiedC['desc']; ?>
                   </div>
                   <div class="col-12 text-center">
-                    <a href="#" class="btn btn--large btn__tiger mb-4">Bergabunglah dengan Komunitas</a>
+                    <a href="<?php echo $verifiedC['link']; ?>" class="btn btn--large btn__tiger mb-4">Bergabunglah dengan Komunitas</a>
                   </div>
                 </div>
               </div>
@@ -248,7 +250,7 @@ Template Name: for creators Page Indonesia
         $afterF = get_field('after_featured');  ?>      
           <div class="col-md-5 offset-md-1 align-self-center text-center text-md-left order-md-2">
             <h1 class="mt-5 col-md-10"><?php echo $afterF['title']; ?></h1>
-            <a href="#" class="btn btn--large btn__tiger mb-5">Daftar Sekarang sebagai Kreator</a>
+            <a href="<?php echo $afterF['link']; ?>" class="btn btn--large btn__tiger mb-5">Daftar Sekarang sebagai Kreator</a>
           </div>    
           <div class="col-md-6 order-md-1">
             <img src="<?php echo esc_url( $afterF['img']['url'] ); ?>" alt="" class="img-fluid mobile">

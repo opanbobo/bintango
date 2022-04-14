@@ -20,13 +20,13 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'bintango' );
+define( 'DB_NAME', 'bintangok' );
 
 /** Database username */
 define( 'DB_USER', 'root' );
 
 /** Database password */
-define( 'DB_PASSWORD', '1qaZXsw2!!' );
+define( 'DB_PASSWORD', '' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
@@ -36,8 +36,8 @@ define( 'DB_CHARSET', 'utf8mb4' );
 
 /** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
-define( 'WP_HOME', 'http://bintango.com' );
-define( 'WP_SITEURL', 'http://bintango.com' );
+// define( 'WP_HOME', 'http://bintango.com' );
+// define( 'WP_SITEURL', 'http://bintango.com' );
 /**#@+
  * Authentication unique keys and salts.
  *
